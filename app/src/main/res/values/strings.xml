@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Fall2What</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+</resources>

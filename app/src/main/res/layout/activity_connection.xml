@@ -9,4 +9,50 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.detlef.fall2what.ConnectionActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_Label"
+        android:id="@+id/startButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_label"
+        android:id="@+id/wifiButton"
+        android:layout_alignTop="@+id/mode1"
+        android:layout_alignRight="@+id/blueButton"
+        android:layout_alignEnd="@+id/blueButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth_label"
+        android:id="@+id/blueButton"
+        android:layout_below="@+id/wifiButton"
+        android:layout_toLeftOf="@+id/startButton"
+        android:layout_toStartOf="@+id/startButton"
+        android:layout_marginTop="102dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mode_1_label"
+        android:id="@+id/mode1"
+        android:layout_marginTop="99dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/mode2"
+        android:layout_alignStart="@+id/mode2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mode_2_label"
+        android:id="@+id/mode2"
+        android:layout_alignTop="@+id/blueButton"
+        android:layout_toRightOf="@+id/startButton"
+        android:layout_toEndOf="@+id/startButton" />
 </RelativeLayout>

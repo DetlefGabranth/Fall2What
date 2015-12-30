@@ -16,6 +16,8 @@ public class LaunchActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.activity_launch);
 
         (findViewById(R.id.play_button)).setOnClickListener(new View.OnClickListener() {

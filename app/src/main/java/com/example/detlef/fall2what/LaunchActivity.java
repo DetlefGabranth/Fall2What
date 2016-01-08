@@ -34,8 +34,8 @@ public class LaunchActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(LaunchActivity.this, SettingsActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(LaunchActivity.this, SettingsActivity.class);
+                //startActivity(intent);
 
             }
         });

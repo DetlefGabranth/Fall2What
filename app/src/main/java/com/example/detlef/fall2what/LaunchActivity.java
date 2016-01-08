@@ -40,6 +40,14 @@ public class LaunchActivity extends AppCompatActivity {
             }
         });
 
+        (findViewById(R.id.currentPgView)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LaunchActivity.this, ChoosePgActivity.class);
+                startActivity(intent);
+            }
+        });
+
         (findViewById(R.id.leaderButton)).setOnClickListener(new View.OnClickListener() {
 
             @TargetApi(Build.VERSION_CODES.HONEYCOMB)

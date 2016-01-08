@@ -21,6 +21,10 @@
             android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme" />
         <activity android:name=".ConnectionActivity" />
+        <activity
+            android:name=".ChoosePgActivity"
+            android:label="@string/title_activity_choose_pg" >
+        </activity>
     </application>
 
 </manifest>

@@ -24,4 +24,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.0'
     compile 'com.android.support:design:23.1.0'
+    compile files('C:/Users/Altair07/Desktop/Sviluppo/WorkspaceAndroidStudio/Fall2What/Fall2What/libs/carousel-api-v1.jar')
 }

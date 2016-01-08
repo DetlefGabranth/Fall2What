@@ -11,4 +11,9 @@
     <string name="shop_label">Shop</string>
     <string name="fx_label">Sound Effect</string>
     <string name="sound_label">Music</string>
+    <string name="reset_app_label">Reset</string>
+    <string name="ip_text_label">IP</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 </resources>

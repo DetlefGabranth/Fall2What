@@ -1,12 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/settings_backBut"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
 
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Switch"
-        android:id="@+id/switch1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:layout_alignTop="@id/settings_backBut"
+        android:text="@string/sound_label"
+        android:id="@id/settings_musicBut"
         tools:targetApi="ice_cream_sandwich" />
-</LinearLayout>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/settings_musicBut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="@string/fx_label"
+        android:id="@id/settings_soundBut"
+        tools:targetApi="ice_cream_sandwich" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/ip_text_label"
+        android:id="@id/settings_ipText"
+        android:layout_marginTop="48dp"
+        android:layout_alignTop="@id/settings_soundBut"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reset_app_label"
+        android:id="@id/settings_resetBut"
+        android:layout_marginTop="48dp"
+        android:layout_alignTop="@id/settings_ipText" />
+
+</RelativeLayout>

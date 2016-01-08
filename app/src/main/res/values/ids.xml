@@ -2,7 +2,13 @@
 <resources>
     <item name="playButton" type="id" />
     <item name="settingsButton" type="id" />
+    <item name="settings_musicBut" type="id" />
+    <item name="settings_soundBut" type="id" />
+    <item name="settings_resetBut" type="id" />
+    <item name="settings_ipText" type="id" />
+    <item name="settings_backBut" type="id" />
     <item name="shopButton" type="id" />
+    <item name="leaderButton" type="id" />
     <item name="one" type="id" />
     <item name="two" type="id" />
     <item name="three" type="id" />

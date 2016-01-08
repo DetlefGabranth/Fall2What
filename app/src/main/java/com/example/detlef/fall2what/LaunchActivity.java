@@ -20,7 +20,7 @@ public class LaunchActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_launch);
 
-        (findViewById(R.id.play_button)).setOnClickListener(new View.OnClickListener() {
+        (findViewById(R.id.playButton)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -30,24 +30,24 @@ public class LaunchActivity extends AppCompatActivity {
             }
         });
 
-        (findViewById(R.id.settings_image_button)).setOnClickListener(new View.OnClickListener() {
+        (findViewById(R.id.settingsButton)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                //Intent intent = new Intent(LaunchActivity.this, SettingsActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(LaunchActivity.this, SettingsActivity.class);
+                startActivity(intent);
 
             }
         });
 
-        (findViewById(R.id.leader_image_button)).setOnClickListener(new View.OnClickListener() {
+        (findViewById(R.id.leaderButton)).setOnClickListener(new View.OnClickListener() {
 
             @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 
             @Override
             public void onClick(View v) {
 
-                PopupMenu popupMenu = new PopupMenu(LaunchActivity.this, findViewById(R.id.leader_image_button));
+                PopupMenu popupMenu = new PopupMenu(LaunchActivity.this, findViewById(R.id.leaderButton));
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {

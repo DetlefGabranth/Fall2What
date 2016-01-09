@@ -1,37 +1,49 @@
 package com.example.detlef.fall2what;
 
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class ChoosePgActivity extends AppCompatActivity {
+import com.example.detlef.fall2what.viewerstuff.PgViewerAdapter;
+
+public class ChoosePgActivity extends FragmentActivity {
+
+    public final static int PAGES = 5;
+    public final static int LOOPS = 1;
+    public final static int FIRST_PAGE = PAGES * LOOPS / 2;
+    public final static float BIG_SCALE = 1.0f;
+    public final static float SMALL_SCALE = 0.8f;
+    public final static float DIFF_SCALE = BIG_SCALE - SMALL_SCALE;
+
+    public static String PACKAGE_NAME;
+
+    public PgViewerAdapter adapter;
+    public ViewPager pager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_pg);
+
+        PACKAGE_NAME = getApplicationContext().getPackageName();
+
+        pager = (ViewPager) findViewById(R.id.choosePg_viewer);
+        adapter = new PgViewerAdapter(this, this.getSupportFragmentManager());
+        pager.setAdapter(adapter);
+        //setOnPageChangeListener(adapter);
+        pager.addOnPageChangeListener(adapter);
+
+        //pager.setCurrentItem(FIRST_PAGE);
+        pager.setCurrentItem(1);
+
+        pager.setOffscreenPageLimit(3);
+
+        //pager.setPageMargin(-200);
+        pager.setPageMargin(-600);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_choose_pg, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }

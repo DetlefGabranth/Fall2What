@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top">
+    <com.example.detlef.fall2what.viewerstuff.PgViewerLinearLayout
+        android:id="@id/choosePg_rootLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:gravity="top|center"
+	    android:background="@android:color/transparent">
+	    <TextView
+	        android:id="@id/choosePg_nameLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20dp" />
+		<ImageView
+			android:id="@id/choosePg_charImage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:src="@drawable/isacco"/>
+	</com.example.detlef.fall2what.viewerstuff.PgViewerLinearLayout>
+</LinearLayout>

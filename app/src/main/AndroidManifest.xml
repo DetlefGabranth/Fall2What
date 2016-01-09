@@ -23,7 +23,9 @@
         <activity android:name=".ConnectionActivity" />
         <activity
             android:name=".ChoosePgActivity"
-            android:label="@string/title_activity_choose_pg" >
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/title_activity_choose_pg"
+            android:theme="@style/AppTheme"  >
         </activity>
     </application>
 

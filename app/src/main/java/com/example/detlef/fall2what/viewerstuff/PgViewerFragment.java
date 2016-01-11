@@ -1,24 +1,26 @@
 package com.example.detlef.fall2what.viewerstuff;
 
+import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.detlef.fall2what.ChoosePgActivity;
+import com.example.detlef.fall2what.LaunchActivity;
 import com.example.detlef.fall2what.R;
 
 /**
  * Created by Altair07 on 09/01/2016.
  */
-public class PgViewerFragment extends Fragment {
+public class PgViewerFragment extends Fragment{
 
     public static Fragment newInstance(ChoosePgActivity context, int pos,
                                        float scale)
@@ -46,10 +48,8 @@ public class PgViewerFragment extends Fragment {
         tv.setText("Position = " + pos);
 
         ImageView im = (ImageView) l.findViewById(R.id.choosePg_charImage);
-
-        Resources res = getResources();
-        int resourceId = res.getIdentifier(
-                "char_" + pos, "drawable", ChoosePgActivity.PACKAGE_NAME);
+        int resourceId = getResources().getIdentifier(
+                "char_" + pos, "drawable", LaunchActivity.PACKAGE_NAME);
         im.setImageResource(resourceId);
 
         PgViewerLinearLayout root = (PgViewerLinearLayout) l.findViewById(R.id.choosePg_rootLayout);
@@ -58,4 +58,5 @@ public class PgViewerFragment extends Fragment {
 
         return l;
     }
+
 }

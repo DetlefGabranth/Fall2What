@@ -22,5 +22,21 @@
 			android:layout_height="wrap_content"
 			android:layout_centerHorizontal="true"
 			android:src="@drawable/isacco"/>
+		<TextView
+			android:id="@id/choosePg_skillLabel_1"
+			android:text="@string/skill_1_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="28dp" />
+
+		<TextView
+			android:text="@string/skill_1_label"
+			android:id="@id/choosePg_skillLabel_2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="28dp" />
+
 	</com.example.detlef.fall2what.viewerstuff.PgViewerLinearLayout>
 </LinearLayout>

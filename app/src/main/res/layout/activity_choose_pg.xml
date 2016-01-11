@@ -9,11 +9,26 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.detlef.fall2what.ChoosePgActivity">
 
+    <ImageButton
+        android:id="@+id/ciao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
     <android.support.v4.view.ViewPager
         android:id="@id/choosePg_viewer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:overScrollMode="never" />
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:overScrollMode="never"  />
 
+    <Button
+        android:id="@id/choosePg_confirmButton"
+        android:text="@string/choose_confirmPg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/choosePg_viewer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"/>
 </RelativeLayout>

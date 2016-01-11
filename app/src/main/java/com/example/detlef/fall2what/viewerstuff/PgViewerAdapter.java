@@ -65,7 +65,8 @@ public class PgViewerAdapter extends FragmentPagerAdapter implements
     @Override
     public void onPageSelected(int position) 
     {
-        Log.e("message","prova " + position);
+        context.setChoosenPosition(position);
+
     }
 
     @Override

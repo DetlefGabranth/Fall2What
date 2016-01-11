@@ -14,6 +14,9 @@
     <item name="choosePg_viewer" type="id" />
     <item name="choosePg_nameLabel" type="id" />
     <item name="choosePg_charImage" type="id" />
+    <item name="choosePg_skillLabel_1" type="id" />
+    <item name="choosePg_skillLabel_2" type="id" />
+    <item name="choosePg_confirmButton" type="id" />
 
     <item name="shopButton" type="id" />
     <item name="leaderButton" type="id" />

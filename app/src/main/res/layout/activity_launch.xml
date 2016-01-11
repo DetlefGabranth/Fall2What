@@ -54,12 +54,11 @@
         android:layout_alignBottom="@id/settingsButton" />
 
     <ImageView
+        android:id="@id/currentPgView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@id/currentPgView"
         android:layout_above="@id/playButton"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/isacco"/>
+        android:layout_centerHorizontal="true"  />
 
     <ImageButton
         android:layout_width="wrap_content"
